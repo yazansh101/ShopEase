@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "869883656143",
+    "project_id": "ecommerce-b44bc",
+    "storage_bucket": "ecommerce-b44bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869883656143:android:7edff56f22ec1def4e44ba",
+        "android_client_info": {
+          "package_name": "com.example.chat_app_max"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869883656143-e7qegs8rqveigkmo3q0kvsh2i6sro6l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLyOayEFWxo9hRlesrtZ32ZnYFwmSiIrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869883656143-e0ceflp91quhb25c54svp06tj4457l1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
