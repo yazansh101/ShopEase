@@ -1,16 +1,17 @@
-# chat_app_max
+# ShopEase
 
-A new Flutter project.
+This is a flutter-based E-Commerce app that uses various features such payment, location, Google map integration, push notifications, product search and filtering, product details view, checkout, and Hive database to store orders.
 
-## Getting Started
+# Features
 
-This project is a starting point for a Flutter application.
+The main features of the E-Commerce app include:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Payment integration for seamless money transfer during purchase
+- Location system to get users geographic coordinates for better shopping experience
+- Google Maps integration for better visualization and navigation
+- Push notifications for personalized alerts and updates
+- Search capabilities to locate products easily and quickly
+- Product filtering to sort and locate specific items depending on user preferences
+- Detailed Product views with specs, images, ratings, and reviews to help users make informed decisions
+- Simple and easy-to-use checkout system for seamless purchase experience
+- Hive database system to efficiently store orders and ensure fast access
