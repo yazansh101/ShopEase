@@ -23,7 +23,7 @@ class Binding implements Bindings {
     Get.put(OrderViewModel());
     Get.lazyPut(() => ImagePickerService(), fenix: true);
     Get.put(SearchViewModel());
-    Get.lazyPut(()=>AuthViewModel(
+    Get.put(AuthViewModel(
       authService: FirebaseAuthService(),
       navigationService: GetNavigationService(),
     ));

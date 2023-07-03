@@ -8,12 +8,13 @@ import '../../../core/utils/constants.dart';
 import '../screens/help_center.dart';
 
 class MenuItems extends StatelessWidget {
-  final authController = Get.find<AuthViewModel>();
 
-  MenuItems({super.key});
+  const MenuItems({super.key});
 
   @override
   Widget build(BuildContext context) {
+  final authController = Get.find<AuthViewModel>();
+
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: SingleChildScrollView(
