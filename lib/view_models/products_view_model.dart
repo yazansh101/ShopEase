@@ -66,14 +66,6 @@ class ProductsViewModel extends GetxController {
     final List<Product> mylist = _products
         .where((product) => product.category == productCategory)
         .toList();
-    // for (int i = 0; i < _products.length; i++) {
-    //   if (_products[i].category == productCategory) {
-
-    //     log(_products[i].category);
-    //     log(mylist.length.toString());
-    //     mylist.add(_products[i]);
-    //   }
-    // }
     log(mylist[0].title);
     return mylist;
   }
@@ -83,8 +75,6 @@ class ProductsViewModel extends GetxController {
     final myProducts = await _productRepository.fetchProducts();
     _products.value = myProducts;
     isLoading.value = false;
-
-    //  _products.assignAll(myProducts);
   }
 
   List<Product> listOfBestSellingProducts() {

@@ -75,39 +75,9 @@ class MySummary extends StatelessWidget {
                             .product
                             .image,
                       ),
-                      // fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                // const SizedBox(
-                //   height: 5,
-                //),
-                // CustomText(
-                //   text: cartViewModel.items.values
-                //               .toList()[index]
-                //               .product
-                //               .title
-                //               .length >
-                //           20
-                //       ? '${cartViewModel.items.values.toList()[index].product.title.substring(0, 20)}.'
-                //       : cartViewModel.items.values
-                //           .toList()[index]
-                //           .product
-                //           .title,
-                //   fontSize: 15,
-                //   fontWeight: FontWeight.bold,
-                //   maxLines: 1,
-                // ),
-                // const SizedBox(
-                //   height: 5,
-                // ),
-                // CustomText(
-                //   text:
-                //       "\$${cartViewModel.items.values.toList()[index].product.price}",
-                //   fontSize: 15,
-                //   fontWeight: FontWeight.bold,
-                //   color: primaryColor,
-                // ),
                 const SizedBox(
                   height: 5,
                 ),
