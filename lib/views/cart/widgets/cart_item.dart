@@ -13,12 +13,9 @@ import '../../orders/cart_view_model.dart';
 
 class CartItemWidget extends StatelessWidget {
   CartItem  cartItem;
-  //Product product;
   CartItemWidget({super.key, 
     required this.cartItem,
-    //   required this.product,
   });
-  //Get.put( () => CartViewModel(),);
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +58,6 @@ class CartItemWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  //  border: Border.all(color: Colors.grey,width: 1 )
                 ),
                 height: 150,
                 width: MediaQuery.of(context).size.width * 0.28,

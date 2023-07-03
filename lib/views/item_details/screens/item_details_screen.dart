@@ -127,14 +127,13 @@ class DetailScreen extends StatelessWidget {
 
   Hero _buildImage(Size size) {
     return Hero(
+      
       tag: productModel!.id,
       child: SizedBox(
         width: size.width,
         height: size.height * .4,
         child: Image.network(
           productModel!.image,
-          //     Get.arguments['image'],
-          //  fit: BoxFit.fill,
         ),
       ),
     );

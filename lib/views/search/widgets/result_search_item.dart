@@ -29,11 +29,11 @@ class ResultSearchItem extends StatelessWidget {
         width: 80,
         child: Hero(
           tag: id,
+          
           child: FadeInImage(
             placeholder: AssetImage(productsViewModel.getPlaceHolderImage(category)),
             image: NetworkImage(
               image,
-            //  fit: BoxFit.contain,
             ),
           ),
         ),
