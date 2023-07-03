@@ -25,7 +25,6 @@ class IconBtnWithCounter extends StatelessWidget {
         clipBehavior: Clip.none,
         children: [
           Container(
-            margin: const EdgeInsets.all(5),
             padding: EdgeInsets.all(setHeight(1)),
             height: setHeight(5),
             width: setHeight(5),
@@ -35,9 +34,7 @@ class IconBtnWithCounter extends StatelessWidget {
                10,
               ),
               color: Colors.grey.shade200,
-              //shape: BoxShape.rectangle,
-            ),
-            
+            ), 
             child: SvgPicture.asset(svgSrc),
           ),
           if (numOfitem != 0)

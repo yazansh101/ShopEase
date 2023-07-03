@@ -37,15 +37,8 @@ class HomeBody extends StatelessWidget {
                 const SizedBox(
                   height: 15,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                        child: _buildScrollableBanner(
-                            homeViewModel.indexforPageOfBanner)),
-                    scrollerDot(),
-                  ],
-                ),
+                _buildScrollableBanner(homeViewModel.indexforPageOfBanner),
+                scrollerDot(),
                 const SizedBox(
                   height: 10,
                 ),
@@ -100,8 +93,8 @@ Widget _buildCategorySection() {
   );
 }
 
-Column scrollerDot() {
-  return Column(
+Row scrollerDot() {
+  return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: List.generate(3, (index) => buildDot(index)),
   );
@@ -112,8 +105,8 @@ Widget buildDot(int index) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       margin: const EdgeInsets.all(6),
-      height: controller.indexforPageOfBanner == index ? 13 : 8,
-      width: 5,
+      height: 5,
+      width: controller.indexforPageOfBanner == index ? 13 : 8,
       decoration: BoxDecoration(
         color: controller.indexforPageOfBanner == index
             ? primaryColor
@@ -140,7 +133,7 @@ Widget _buildScrollableBanner(
         onPageChanged: (value) {
           homeViewModel.onBannerPagedChanged(value);
         },
-        scrollDirection: Axis.vertical,
+        scrollDirection: Axis.horizontal,
         itemCount: listOFbannerCard.length,
         itemBuilder: (BuildContext context, int index) {
           return AnimationConfiguration.staggeredList(
