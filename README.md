@@ -6,6 +6,7 @@ This is a flutter-based E-Commerce app that uses various features such payment, 
 
 The main features of the E-Commerce app include:
 
+- Fetching Products Using REST API
 - Payment integration for seamless money transfer during purchase
 - Location system to get users geographic coordinates for better shopping experience
 - Google Maps integration for better visualization and navigation
