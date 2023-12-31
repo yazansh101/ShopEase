@@ -3,7 +3,8 @@ part of 'cart_model.dart';
 
 
 class CartItemAdapter extends TypeAdapter<CartItem> {
-  
+  // 23110019451
+  // 23110019451
   @override
   final int typeId = 1;
 

@@ -51,13 +51,13 @@ class FirebaseAuthService implements AuthService {
   @override
   Future<UserCredential> signInWithGoogle() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
-    final GoogleSignInAccount googleUser = await googleSignIn.signIn();
-    final GoogleSignInAuthentication googleAuth =
-        await googleUser.authentication;
+    final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
 
     final AuthCredential credential = GoogleAuthProvider.credential(
-      idToken: googleAuth.idToken,
-      accessToken: googleAuth.accessToken,
+      idToken: googleAuth?.idToken,
+      accessToken: googleAuth?.accessToken,
     );
     return await _auth.signInWithCredential(credential);
   }

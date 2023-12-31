@@ -1,4 +1,5 @@
 
+import 'package:chat_app_max/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -26,8 +27,8 @@ class IconBtnWithCounter extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.all(setHeight(1)),
-            height: setHeight(5),
-            width: setHeight(5),
+            height: setHeight(5.6),
+            width: setHeight(5.6),
             decoration: BoxDecoration(
               border:  Border.fromBorderSide(BorderSide(color: Colors.black.withOpacity(0.2))),
               borderRadius: BorderRadius.circular(
@@ -39,16 +40,14 @@ class IconBtnWithCounter extends StatelessWidget {
           ),
           if (numOfitem != 0)
             Positioned(
-              
-              top: -7,
-              right: 0,
+              top: -4,
+              right: 12,
               child: Container(
-                height: setHeight(3.7),
-                width: setWidth(3.7),
+                height: setHeight(3),
+                width: setWidth(3),
                 decoration: const BoxDecoration(
-                  color: Color(0xFFFF4848),
+                  color:primaryColor,
                   shape: BoxShape.circle,
-                //  border: Border.all(width: 1.5, color: Colors.white),
                 ),
                 child: Center(
                   child: Text(
